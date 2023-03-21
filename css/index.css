@@ -1,3 +1,138 @@
+section#last .content-top {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+section#last .content-top .box-content {
+  margin-bottom: 20px;
+}
+section#last .content-top .box-content p {
+  margin-bottom: 0;
+  color: #2cbcec;
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+}
+section#last .content-main {
+  display: flex;
+}
+section#last .content-main .main {
+  flex-basis: 50%;
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+}
+section#last .content-main .main .content-main-left {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3px;
+  row-gap: 2px;
+}
+.content-main-left .box-content {
+  position: relative;
+  width: 49.2%;
+  height: 292px;
+}
+.content-main-left .box-content .image {
+  display: flex;
+  align-items: center;
+  height: 250px;
+}
+.content-main-left .box-content .title {
+  height: 74px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2cbcec;
+  z-index: 1111;
+  width: 100%;
+  padding: 25px 43px;
+}
+.content-main-left .box-content .image {
+  /* align-items: center; */
+}
+.content-main-left .box-content .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content-main-left .box-content .title p {
+  text-align: center;
+  width: 900;
+  font-weight: 500;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.rightBanner {
+  width: 420px !important;
+  height: 345px;
+  background: linear-gradient(180deg, #2cbcec 0%, #e0f4ff 100%);
+  border-radius: 34px;
+}
+.titleBody {
+  font-size: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.inputSite {
+  padding-left: 5px;
+  margin-top: 5px;
+  border-radius: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 342px;
+  height: 40px;
+  border: none;
+  text-indent: 10px;
+}
+.btnBuy {
+  background: #ff1d1d;
+  border-radius: 34px;
+  width: 154px;
+  height: 40px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  /* position: absolute;
+  transform: translate(1, 10px);
+  bottom: -18px;
+  right: 50;
+  left: 50%;
+  transform: translate(-50%, 0); */
+  color: #ffffff;
+}
+.boxBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  background: #000000;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+.boxBody span {
+  font-size: 2rem;
+  text-decoration-line: none;
+}
+/*  */
 footer {
   background-position: center;
   padding-bottom: 35px;
@@ -6,7 +141,11 @@ footer {
   /* background-color: black; */
   background: url("/img/bg.png") !important;
   padding-top: 160px;
-  /* padding-bottom: 16px; */
+  padding-bottom: 1px;
+  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .footer-content .footer-title {
@@ -69,13 +208,38 @@ footer {
 span {
   text-decoration-line: underline;
 }
+/* 8LY */
+.eightly .content .title p{
+    margin-bottom: 0;
+    color: #2cbcec;
+    font-weight: 900;
+    font-size: 32px;
+    text-align: center;
+}
+.eightly .content .content-bottom{
+    border: 1px solid #2CBCEC;
+    background: #2CBCEC;
+    padding: 32px;
+}
+.eightly .content .content-bottom img{
+    width: 100%;
+    object-fit: contain;
+}
+.eightly .content img{
+    width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+    .eightly .content .content-bottom{
+        padding: 24px;
+    }
+  }
 @media only screen and (max-width: 992px) {
-    .background-custom {
-        padding-top: 97px;
-      }
-      .bread {
-        width: 100%;
-      }
+  .background-custom {
+    padding-top: 97px;
+  }
+  .bread {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .bread {
